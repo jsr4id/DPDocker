@@ -20,7 +20,7 @@ cp -r $root $workingDir/$extension
 sudo rm -rf $workingDir/$extension/.git
 
 echo "Installing dependencies"
-$(dirname $0)/../../composer/scripts/exec-install.sh $extension '' $workingDir
+$(dirname $0)/../../composer/scripts/exec-install.sh $extension '' $workingDir 'prod'
 
 echo "Building assets"
 cd $workingDir/$extension/package
